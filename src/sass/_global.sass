@@ -1,0 +1,487 @@
+.change .header__burger__item:nth-child(1)
+    transform: rotate(-45deg) translate(0px, 10px)
+.change .header__burger__item:nth-child(2)
+    opacity: 0
+.change .header__burger__item:nth-child(3)
+    transform: rotate(45deg) translate(0px, -10px)
+.open
+    transform: translateX(0) !important
+.line
+    margin-top: 44px
+    width: 72px
+    height: 2px
+    background-color: #E41B13
+
+.swiper-container
+    width: 600px
+    height: 360px
+.slider-next
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    outline: none
+    width: 56px
+    height: 56px
+    border: 1px solid #8A93B4
+    margin-left: 16px
+    & img
+        pointer-events: none
+        transform: rotate(-180deg)
+
+.slider-prev
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    outline: none
+    width: 56px
+    height: 56px
+    border: 1px solid #8A93B4
+    z-index: 999
+    & img
+        pointer-events: none
+
+.slider-elements
+    margin-top: 12px
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.slider-buttons
+    display: flex
+
+.swiper-pagination
+    position: relative !important
+
+.image-slider
+    padding: 30px 0 70px 0
+
+.image-slider__image
+    text-align: center
+
+.image-slider__image img
+    max-width: 100%
+
+.visible
+    display: block !important
+
+.burger-menu
+    transform: translateX(-100%)
+    padding: 24px 32px 44px 32px
+    position: fixed
+    width: 400px
+    height: 100%
+    background-color: #0F1D4E
+    transition: 0.3s all
+    z-index: 9999
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 336px
+        height: 64px
+        margin: 0 auto
+        border-bottom: 1px solid #8A93B4
+        &__title
+            font-family: Cuprum
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            color: #8A93B4
+        &__close
+            cursor: pointer
+    &__box
+        padding: 30px 0 53px 0
+        width: 100%
+        height: 400px
+        border-bottom: 1px solid #8A93B4
+    &__items
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__link
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        color: #8A93B4
+        &:focus
+            color: #ffffff
+            font-weight: bold
+    &__item
+        padding-bottom: 10px
+        width: 100%
+        &:hover
+            border-bottom: 2px solid #FF1D14
+    &__footer
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 32px 0
+        width: 100%
+        height: 110px
+        &__tel
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: #8A93B4
+        &__tel span
+            color: white
+            margin-left: 20px
+        &__email
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: #8A93B4
+        &__email span
+            color: white
+            margin-left: 30px
+
+.container
+    max-width: 1600px
+    margin: 0 auto
+
+.main
+    position: relative
+    height: 100vh
+    background: url(../img/bg/bg-main.jpg) center center
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    &__wrapper
+        padding-top: 186px
+        display: flex
+        height: 84.5vh
+        justify-content: space-between
+        flex-direction: column
+    &__info
+        display: flex
+        height: 100%
+        width: 100%
+        flex-direction: column
+        justify-content: space-between
+    &__title
+        font-family: Cuprum, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 72px
+        color: #FFFFFF
+    &__subtitle
+        margin-top: 50px
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        color: #FFFFFF
+    &__btn
+        cursor: pointer
+        display: flex
+        padding: 24px
+        justify-content: space-between
+        border: 2px solid #8A93B4
+        outline: none
+        margin-top: 97px
+        width: 328px
+        height: 64px
+        background: none
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        color: #FFFFFF
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        transition: 0.3s all
+        &:hover
+            background-color: #0F1D4E
+            border: 2px solid #ffffff
+            stroke: #E41B13
+    &__cards
+        margin-top: 33.8vh
+        display: flex
+        width: 100%
+        height: 100%
+        justify-content: space-between
+    &__card
+        padding: 26px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 500px
+        height: 80px
+        background: #FFFFFF
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #0F1D4E
+        transition: 0.3s all
+        &:hover
+            border-top: 4px solid #E41B13
+            stroke: #E41B13
+        &:focus
+            border-top: 4px solid #E41B13
+            stroke: #E41B13
+    &__graph
+        pointer-events: none
+        position: absolute
+        max-height: 80%
+        max-width: 80%
+        top: 0
+        right: 0
+    &__graph-text
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: absolute
+        top: 70vh
+        right: 13vw
+        &__content
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            letter-spacing: 0.03em
+            color: #FFFFFF
+        &__content span
+            font-family: Cuprum
+            font-style: normal
+            font-weight: bold
+            font-size: 72px
+    &__dots
+        width: 100%
+        height: 100%
+    &__dot
+        cursor: pointer
+        position: absolute
+        width: 8px
+        height: 8px
+        background-color: #fff
+        border-radius: 50%
+        &:nth-child(1)
+            top: 32vh
+            right: 11vw
+            &:hover
+                background-color: #E41B13
+                transform: scale(2)
+        &:nth-child(2)
+            top: 37vh
+            right: 21vw
+            &:hover
+                background-color: #E41B13
+                transform: scale(2)
+        &:nth-child(3)
+            top: 59.8vh
+            right: 35.5vw
+            &:hover
+                background-color: #E41B13
+                transform: scale(2)
+        &:nth-child(4)
+            top: 59.8vh
+            right: 51vw
+            &:hover
+                background-color: #E41B13
+                transform: scale(2)
+
+.header
+    display: flex
+    justify-content: space-between
+    padding-top: 12px
+    width: 100%
+    height: 62px
+    border-bottom: 1px solid #ffffff
+    &__logo img
+        max-width: none
+    &__nav
+        margin-top: 20px
+        width: 700px
+    &__menu
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__link
+        font-family: Roboto, sans-serif
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+        color: #FFFFFF
+        transition: 0.3s all
+        &:hover
+            color: #E41B13
+    &__burger
+        cursor: pointer
+        width: 25px
+        height: 16px
+        &__item:nth-child(1)
+            width: 24px
+            height: 1px
+            background-color: #fff
+            transition: 0.4s
+        &__item:nth-child(2)
+            width: 24px
+            height: 1px
+            background-color: #fff
+            margin: 6px 0
+            transition: 0.4s
+        &__item:nth-child(3)
+            width: 24px
+            height: 1px
+            background-color: #fff
+            margin: 6px 0
+            transition: 0.4s
+.region
+    padding: 97px 0 108px 0
+    height: 100vh
+    background: url(../img/bg/bg-region.jpg) center center
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    &__wrapper
+        display: flex
+        width: 100%
+        height: 100%
+    &__info
+        width: 100%
+    &__title
+        font-family: Cuprum, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        color: #FFFFFF
+    &__text
+        margin-top: 39px
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        color: #FFFFFF
+    &__btn
+        outline: none
+        padding-left: 24px
+        padding-right: 24px
+        align-items: center
+        justify-content: space-between
+        display: flex
+        background: none
+        margin-top: 78px
+        width: 243px
+        height: 56px
+        border: 2px solid #8A93B4
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: #F2F2F2
+        transition: 0.3s all
+        &:hover
+            background-color: #0F1D4E
+            border: 2px solid #ffffff
+            stroke: #E41B13
+    &__slider
+        margin-top: 2rem
+
+.region-footer
+    margin-top: 100px
+    display: flex
+    justify-content: space-between
+    max-width: 80vw
+    &__card
+        display: flex
+        flex-direction: column
+        &__title
+            font-family: Cuprum, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            color: #FFFFFF
+        &__subtitle
+            margin-top: 16px
+            font-family: Roboto,sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            color: #FFFFFF
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        width: 100%
+.popup-bg
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.8)
+    z-index: 9999
+    display: none
+
+.popup
+    padding: 40px 72px 48px 84px
+    position: absolute
+    background: #E5E5E5
+    width: 800px
+    height: 756px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 30px
+    padding-top: 60px
+
+    & img
+        position: absolute
+        top: 40px
+        right: 48px
+        cursor: pointer
+
+    &__title
+        margin-top: 90px
+        font-family: Cuprum
+        font-style: normal
+        font-weight: bold
+        font-size: 64px
+        line-height: 100%
+        color: #0F1D4E
+
+    &__text
+        width: 600px
+        margin-top: 79px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 160%
+        color: #484848
+
+    &__btn
+        margin-top: 104px
+        outline: none
+        border: none
+        width: 240px
+        height: 48px
+        background: #0F1D4E
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 164%
+        text-align: center
+        letter-spacing: 0.02em
+        color: #FFFFFF
+
+    &__btn:hover
+        background: #E5E5E5
+        border: 1px solid #0F1D4E
+        color: #0F1D4E
+        transition: 0.3s all
